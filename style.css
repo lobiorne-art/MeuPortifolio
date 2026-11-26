@@ -1,0 +1,100 @@
+section {
+    min-height: 100vh;
+    padding: 20px 30px;
+}
+    
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    padding-top: 70px;
+    background-color: #000610;
+    color: white;
+
+}
+
+.navbar {
+    width: 100%;
+    min-height: 50px;
+}
+
+.navbar .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.navbar-nav {
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#menu-toggle {
+    display: none;
+}
+
+.navbar {
+    background-color: #000000 !important;
+}
+
+@media (max-width: 991px) {
+
+    .navbar .container {
+        flex-wrap: wrap;
+    }
+
+    .menu-icon {
+        display: block;
+    }
+
+    .navbar-nav {
+        flex-direction: column;
+        gap: 5px;
+        padding-top: 15px;
+    }
+
+}
+
+
+/* AREAS.HTML E BOTÕES */
+
+.botoes-areas {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: center;
+    margin-top: 30px;
+}
+
+.botoes-areas a {
+    background-color: #222;
+    color: white;
+    text-decoration: none;
+    padding: 15px 25px;
+    border-radius: 8px;
+    transition: 0.3s;
+}
+
+.botoes-areas a:hover {
+    background-color: #f00d3e;
+}
+
+.titulo-areas {
+
+    text-align: center;
+
+}
+
+.botoes-areas a.ativo {
+    background-color: #f00d3e;
+    color: white;
+    transition: 0.3s;
+}
